@@ -6,7 +6,7 @@ phases:
       nodejs: 18 # Choose appropriate Node.js version
     commands:
       - npm install -g @angular/cli # Install Angular CLI globally
-      - npm install # Install project dependencies
+      - npm install --legacy-peer-deps # Install project dependencies
 
   pre_build:
     commands:
