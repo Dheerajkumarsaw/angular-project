@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Example: Gracefully stop Nginx
+sudo systemctl stop nginx

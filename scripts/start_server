@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Example: Restart Nginx to start serving the new Angular application
+sudo systemctl restart nginx

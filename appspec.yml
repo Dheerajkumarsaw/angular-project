@@ -1,0 +1,20 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ec2-user
+    group: apache
+    mode: 755
+hooks:
+  ApplicationStop:
+    - location: scripts/stop_server
+      timeout: 60
+      runas: root
+  ApplicationStart:
+    - location: scripts/start_server
+      timeout: 60
+      runas: root
